@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>뉴스테이트 모바일</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
+  </head>
+  <body>
+    <!-- modal area -->
+    <div id="modal-share" class="modal" style="display: none;">
+      <div class="modal share">
+        <div class="modal-top">
+          <h3>페이지 공유하기</h3>
+          <img src="./img/icon_close_24_bl.0f5e43a.png">
+        </div>
+        <div class="contents">
+          <p>뉴스테이트 모바일 소식을 많은 친구들에게 알려주세요!</p>
+          <div class="share-icon"><a href="#">a</a></div>
+          <div class="share-icon"><a href="#">b</a></div>
+          <div class="share-icon"><a href="#">c</a></div>
+          <div class="share-icon"><a href="#">d</a></div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-dwload" class="modal" style="display: none;">
+      <div class="modal download">
+        <div class="modal-top">
+          <h3>뉴스테이트 모바일 다운로드</h3>
+          <img src="./img/icon_close_24_bl.0f5e43a.png">
+        </div>
+        <div class="contents">
+          <div class="down-icon"><a href="#"><img src="./img/download_apple.png"></a></div>
+          <div class="down-icon"><a href="#"><img src="./img/download_google.png"></a></div>
+          <div class="down-icon"><a href="#"><img src="./img/download_galaxy.png"></a></div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-hamburger" style="display: none;">
+      <img src="./img/icon_close_40.png" alt=""class="close-btn">
+      <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+      <nav class="gnb">
+        <ul>
+          <li><a href="#">뉴스</a></li>
+          <li><a href="./guide.html">가이드</a></li>
+          <li><a href="#">미디어</a></li>
+          <li><a href="#">웹툰</a></li>
+          <li><a href="#" class="modal">커뮤니티</a></li>
+          <li><a href="./redemption.html">쿠폰</a></li>
+          <li><a href="#">A-SQUAD</a></li>
+          <li><a href="#">PUBG UNIVERSE</a></li>
+          <li><a href="#">고객지원</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger-icon">
+        <div><p class="ham-icon"></p></div>
+        <div><p class="ham-icon"></p></div>
+        <div><p class="ham-icon"></p></div>
+        <div><p class="ham-icon"></p></div>
+        <div><p class="ham-icon"></p></div>
+      </div>
+    </div>
+    <!-- header -->
+    <header>
+      <div id="header-wrap">
+        <div class="header-left">
+          <h1 class="header-logo">
+            <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+          </h1>
+          <nav id="gnb">
+            <ul>
+              <li><a href="#">뉴스</a></li>
+              <li><a href="./guide.html">가이드</a></li>
+              <li><a href="#">미디어</a></li>
+              <li><a href="#">웹툰</a></li>
+              <li><a href="#" class="modal">커뮤니티</a></li>
+              <li><a href="./redemption.html">쿠폰</a></li>
+              <li><a href="#">A-SQUAD</a></li>
+              <li class="site-link"><a href="#">PUBG UNIVERSE</a></li>
+              <li class="site-link"><a href="#">고객지원</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-right">
+          <a href="#" class="icon share"><span><img src="./img/icon01_small.png"></span></a>
+          <a href="#" class="icon lang"><span><img src="./img/icon02_small.png"></span></a>
+          <a href="#" class="icon download"><span><img src="./img/icon03.png"></span></a>
+          <a href="#" class="icon hamburger"><img src="./img/icon_hamburger.png"></span></a>
+        </div>
+      </div>
+      <div class="lang-wrap" style="display: none;">
+        <div class="close-btn">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="lang left">
+          <p>언어를</p>
+          <p>선택해주세요</p>
+        </div>
+        <div class="lang right">
+          <div>
+            <a>English</a>
+            <a>English(India)</a>
+            <a>한국어</a>
+            <a>Português(Brasil)‎</a>
+            <a>Español(América Latina)‎</a>
+          </div>
+          <div>
+            <a>ไทย</a>
+            <a>Bahasa Indonesia</a>
+            <a>Bahasa Malaysia</a>
+            <a>中文(简体)‎</a>
+            <a>中文(繁體)‎</a>
+          </div>
+          <div>
+            <a>日本語</a>
+            <a>Deutsch</a>
+            <a>العربية</a>
+          </div>
+          <div>
+            <a>Türkçe</a>
+            <a>Русский</a>
+            <a>Français(Europe)‎</a>
+            <a>Español(Europeo)‎‎</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- contents section -->
+    <section id="main-banner">
+      <div class="main">
+        <div class="main-text">
+          <p>최신 소식은</p>
+          <p>네이버 공식 카페에서!</p>
+          <a href="#"><div><span>자세히 보기</span></div></a>
+        </div>
+      </div>
+    </section>
+    <section id="media">
+      <div id="title">
+        <h2>미디어</h2>
+        <a href="./img/plus_icon.png"></a>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="video-btn">
+          <div class="play-btn left"><img src="./img/video_left_btn.png" alt=""></div>
+          <a href="#" class="play-btn video"></a>
+          <div class="play-btn right"><img src="./img/video_right_btn.png" alt=""></div>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="#"><img src="./img/M1IpSuqeAliccJFzWISadGFRMqymFzX9.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./img/video_thumbnail01.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./img/video_thumbnail02.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./img/video_thumbnail03.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./img/video_thumbnail04.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./img/video_thumbnail05.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./img/video_thumbnail06.jpg" alt=""></a></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section id="community">
+      <h2>커뮤니티</h2>
+      <div id="commu-box">
+        <div class="commu-box-wrap" data-bg="linear-gradient(173deg,#05d86d,#03ca51)">
+          <div class="commu-box-bg"></div>
+          <div class="commu-box-hover"></div>
+          <div class="commu-contents">
+            <div class="commu-icon"></div>
+            <p>NAVER CAFE</p>
+            <a href="https://cafe.naver.com/pubgnewstate"><div>JOIN</div></a>
+          </div>
+        </div>
+        <div class="commu-box-wrap" data-bg="linear-gradient(173deg,#05d86d,#03ca51)">
+          <div class="commu-box-bg"></div>
+          <div class="commu-box-hover"></div>
+          <div class="commu-contents">
+            <div class="commu-icon"></div>
+            <p>NAVER GAME</p>
+            <a href="https://game.naver.com/lounge/NEWSTATEMOBILE/home"><div>JOIN</div></a>
+          </div>
+        </div>
+        <div class="commu-box-wrap" data-bg="linear-gradient(173deg,#1c89f4,#1465f0)">
+          <div class="commu-box-bg"></div>
+          <div class="commu-box-hover"></div>
+          <div class="commu-contents">
+            <div class="commu-icon"></div>
+            <p>FACEBOOK</p>
+            <a href="https://www.facebook.com/OfficialNEWSTATEMOBILE/"><div>LIKE</div></a>
+          </div>
+        </div>
+        <div class="commu-box-wrap" data-bg="red">
+          <div class="commu-box-bg"></div>
+          <div class="commu-box-hover"></div>
+          <div class="commu-contents">
+            <div class="commu-icon"></div>
+            <p>YOUTUBE</p>
+            <a href="https://www.youtube.com/channel/UCDPbaUQKbOBkcKYqEGgz0kQ"><div>SUBSCRIBE</div></a>
+          </div>
+        </div>
+        <div class="commu-box-wrap" data-bg="linear-gradient(173deg,#836bd9,#a8026f,#e14633,#fcbf48)">
+          <div class="commu-box-bg"></div>
+          <div class="commu-box-hover"></div>
+          <div class="commu-contents">
+            <div class="commu-icon"></div>
+            <p>INSTAGRAM</p>
+            <a href="https://www.instagram.com/newstatemobile_kr/"><div>FOLLOW</div></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="bottom-wrap">
+      <div id="bottom">
+        <img src="./img/bottom_img.png" alt="">
+        <div class="bottom-left">
+          <span>뉴스테이트 모바일 다운로드</span>
+          <div class="bottom-button">
+            <a href="https://apps.apple.com/app/id1542727626?shortlink=f1067560&c=website_owned_Apple_marketbadge_all_pre_aosios_phqmkt&pid=Official_Website&af_click_lookback=7d&af_channel=phqmkt&af_adset=Apple_marketbadge"><img src="./img/download_apple.png" alt=""></a>
+            <a href="https://play.google.com/store/apps/details?id=com.pubg.newstate&shortlink=8c6fb770&c=Website_Official_Google_marketbadge_all_pre_aosios_phqmkt&pid=Official_Website&af_click_lookback=7d&af_channel=phqmkt&af_adset=Google_marketbadge"><img src="./img/download_google.png" alt=""></a>
+            <a href="https://galaxystore.samsung.com/detail/com.pubg.newstate.samsung?af_adset=Galaxy_marketbadge&af_channel=phqpm&af_click_lookback=7d&c=website_owned_all_launch_aosios_Galaxy_marketbadge_phqpm&pid=owned_website&shortlink=829219d7"><img src="./img/download_galaxy.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div id="footer-wrap">
+        <div class="footer-contents">
+          <div class="footer-left">
+            <div class="logo"><img src="./img/footer_logo.png" alt=""></div>
+            <div class="link-area">
+              <ul>
+                <li><a href="#">서비스 이용약관</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li><a href="#">운영정책</a></li>
+                <li><a href="#">IP 활용정책</a></li>
+              </ul>
+              <a href="">사업 제휴</a>
+              <div class="copyright"><p>&copy;&nbsp;2022&nbsp;krafton&nbsp;inc.&nbsp;</p><p>pubg&nbsp;is&nbsp;a&nbsp;registered&nbsp;trademark&nbsp;</p><p>or&nbsp;service&nbsp;mark&nbsp;of&nbsp;krafton,&nbsp;inc.</p></div>
+            </div>
+          </div>
+          <div class="footer-right">
+            <img src="./img/rating.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
