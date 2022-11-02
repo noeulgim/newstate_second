@@ -103,18 +103,18 @@ header {
 }
 
 .header-right .icon span {
-  display: inline-block;
-  box-sizing: border-box;
-  padding: 24px 28px;
-  height: 140px;
+  display: block;
+  padding: 0 28px;
+  line-height: 140px;
 }
 
 .header-right .icon span img {
   box-sizing: border-box;
 }
-.icon:nth-child(3) {
+.icon:nth-child(3) span {
   background: linear-gradient(180deg,#10eba4,#0bcea2);
   border: 8px solid linear-gradient(180deg,#10eba4,#0bcea2);
+  line-height: 132px;
 }
 
 .icon:last-child {
@@ -126,7 +126,7 @@ header {
   height: 16px;
 }
 
-.icon:hover span {
+.icon:hover {
   background: #000;
 }
 
@@ -233,9 +233,9 @@ header {
     padding: 0 40px 0 0;
   }
 
-  .icon:last-child {
+  /* .icon:last-child {
     display: none;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
