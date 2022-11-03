@@ -1,20 +1,59 @@
 $(function(){
-  $('.icon:nth-child(1)').click(function(){
-    $('body').css('background','rgba(0,0,0,.77)');
-    $('.share').css('display','fixed');
-    // <div class="share">
-    //   <div class="share-title">
-    //     <p>페이지 공유하기</p>
-    //     <img src="./img/share_close.png" alt="">
-    //   </div>
-    //   <div class="share-text">
-    //     <p>뉴스테이트 모바일 소식을 많은 친구들에게 알려 주세요!</p>
-    //     <div class="share-icon"></div>
-    //     <div class="share-icon"></div>
-    //     <div class="share-icon"></div>
-    //     <div class="share-icon"></div>
-    //   </div>
-    // </div>
+
+  // modal ---------------------------------------------------------
+  var commuModal = $('#modal-community');
+  var commuBtn = $('.modal-commu-btn');
+  $(commuBtn).click(function(){
+    $(commuModal).css('display','flex');
+    $('html,body').css('overflow','hidden');
+  });
+  $('.modal-top img').click(function(){
+    $(commuModal).css('display','none');
+    $('html,body').css('overflow','auto');
+  });
+  var shareModal = $('#modal-share');
+  var shareBtn = $('.icon.share');
+  $(shareBtn).click(function(){
+    $(shareModal).css('display','flex');
+    $('html,body').css('overflow','hidden');
+  });
+  $('.modal-top img').click(function(){
+    $(shareModal).css('display','none');
+    $('html,body').css('overflow','auto');
+  });
+  var langModal = $('#lang-modal');
+  var langBtn = $('.icon.lang');
+  $(langBtn).click(function(){
+    $(langModal).css({
+      'display': 'flex',
+      'transition': '1s'
+    });
+    $(this).css('background','#000');
+    $('.icon.lang img').css('filter','invert(100%)');
+  });
+  $('.lang-close-btn').click(function(){
+    $(langModal).css('display','none');
+    $(langBtn).css('background','#fff');
+    $('.icon.lang img').css('filter','invert(0)');
+  });
+  var dwModal = $('#modal-dwload');
+  var dwBtn = $('.icon.download');
+  $(dwBtn).click(function(){
+    $(dwModal).css('display','flex');
+    $('html,body').css('overflow','hidden');
+  });
+  $('.modal-top img').click(function(){
+    $(dwModal).css('display','none');
+    $('html,body').css('overflow','auto');
+  });
+  var hamModal = $('#modal-hamburger');
+  $('#modal-hamburger > img').click(function(){
+    $(hamModal).css('display','none');
+    $('html,body').css('overflow','auto');
+  });
+  $('.icon.hamburger').click(function(){
+    $(hamModal).css('display','block');
+    $('html,body').css('overflow','hidden');
   });
 
   $('#video').mouseover(function(){

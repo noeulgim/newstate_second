@@ -13,31 +13,100 @@
   </head>
   <body>
     <!-- modal area -->
-    <div id="modal-share" class="modal" style="display: none;">
-      <div class="modal share">
-        <div class="modal-top">
-          <h3>페이지 공유하기</h3>
-          <img src="./img/icon_close_24_bl.0f5e43a.png">
-        </div>
-        <div class="contents">
-          <p>뉴스테이트 모바일 소식을 많은 친구들에게 알려주세요!</p>
-          <div class="share-icon"><a href="#">a</a></div>
-          <div class="share-icon"><a href="#">b</a></div>
-          <div class="share-icon"><a href="#">c</a></div>
-          <div class="share-icon"><a href="#">d</a></div>
+    <div id="modal-community">
+      <div class="modal">
+        <div class="modal-wrap modal-commu">
+          <div class="modal-top">
+            <h3>공식 커뮤니티</h3>
+            <img src="./img/icon_close_24_bl.0f5e43a.png">
+          </div>
+          <div class="contents">
+            <p>뉴스테이트 모바일 공식 커뮤니티에서 최신 정보와 이벤트 소식을 가장 먼저 만나보세요!</p>
+            <div id="commu-box">
+              <div class="commu-box-wrap" data-bg="linear-gradient(173deg,#05d86d,#03ca51)">
+                <div class="commu-box-bg"></div>
+                <div class="commu-box-hover"></div>
+                <div class="commu-contents">
+                  <div class="commu-icon"></div>
+                  <p>NAVER CAFE</p>
+                  <a href="https://cafe.naver.com/pubgnewstate"><div>JOIN</div></a>
+                </div>
+              </div>
+              <div class="commu-box-wrap" data-bg="linear-gradient(173deg,#05d86d,#03ca51)">
+                <div class="commu-box-bg"></div>
+                <div class="commu-box-hover"></div>
+                <div class="commu-contents">
+                  <div class="commu-icon"></div>
+                  <p>NAVER GAME</p>
+                  <a href="https://game.naver.com/lounge/NEWSTATEMOBILE/home"><div>JOIN</div></a>
+                </div>
+              </div>
+              <div class="commu-box-wrap" data-bg="linear-gradient(173deg,#1c89f4,#1465f0)">
+                <div class="commu-box-bg"></div>
+                <div class="commu-box-hover"></div>
+                <div class="commu-contents">
+                  <div class="commu-icon"></div>
+                  <p>FACEBOOK</p>
+                  <a href="https://www.facebook.com/OfficialNEWSTATEMOBILE/"><div>LIKE</div></a>
+                </div>
+              </div>
+              <div class="commu-box-wrap" data-bg="red">
+                <div class="commu-box-bg"></div>
+                <div class="commu-box-hover"></div>
+                <div class="commu-contents">
+                  <div class="commu-icon"></div>
+                  <p>YOUTUBE</p>
+                  <a href="https://www.youtube.com/channel/UCDPbaUQKbOBkcKYqEGgz0kQ"><div>SUBSCRIBE</div></a>
+                </div>
+              </div>
+              <div class="commu-box-wrap" data-bg="linear-gradient(173deg,#836bd9,#a8026f,#e14633,#fcbf48)">
+                <div class="commu-box-bg"></div>
+                <div class="commu-box-hover"></div>
+                <div class="commu-contents">
+                  <div class="commu-icon"></div>
+                  <p>INSTAGRAM</p>
+                  <a href="https://www.instagram.com/newstatemobile_kr/"><div>FOLLOW</div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-bottom">
+            <div class="modal-btn">
+              <a href="#" class="more-btn"><div><span>명예의 전당</span></div></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div id="modal-dwload" class="modal" style="display: none;">
-      <div class="modal download">
-        <div class="modal-top">
-          <h3>뉴스테이트 모바일 다운로드</h3>
-          <img src="./img/icon_close_24_bl.0f5e43a.png">
+    <div id="modal-share">
+      <div class="modal">
+        <div class="modal-wrap modal-share">
+          <div class="modal-top">
+            <h3>페이지 공유하기</h3>
+            <img src="./img/icon_close_24_bl.0f5e43a.png">
+          </div>
+          <div class="contents">
+            <p>뉴스테이트 모바일 소식을 많은 친구들에게 알려주세요!</p>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+          </div>
         </div>
-        <div class="contents">
-          <div class="down-icon"><a href="#"><img src="./img/download_apple.png"></a></div>
-          <div class="down-icon"><a href="#"><img src="./img/download_google.png"></a></div>
-          <div class="down-icon"><a href="#"><img src="./img/download_galaxy.png"></a></div>
+      </div>
+    </div>
+    <div id="modal-dwload">
+      <div class="modal">
+        <div class="modal-wrap modal-download">
+          <div class="modal-top">
+            <h3>뉴스테이트 모바일 다운로드</h3>
+            <img src="./img/icon_close_24_bl.0f5e43a.png">
+          </div>
+          <div class="contents">
+            <div class="down-icon"><a href="#"><img src="./img/download_apple.png"></a></div>
+            <div class="down-icon"><a href="#"><img src="./img/download_google.png"></a></div>
+            <div class="down-icon"><a href="#"><img src="./img/download_galaxy.png"></a></div>
+          </div>
         </div>
       </div>
     </div>
@@ -50,7 +119,7 @@
           <li><a href="./guide.html">가이드</a></li>
           <li><a href="#">미디어</a></li>
           <li><a href="#">웹툰</a></li>
-          <li><a href="#" class="modal">커뮤니티</a></li>
+          <li><a href="#" class="modal-commu-btn">커뮤니티</a></li>
           <li><a href="./redemption.html">쿠폰</a></li>
           <li><a href="#">A-SQUAD</a></li>
           <li class="site-link"><a href="#">PUBG UNIVERSE</a></li>
@@ -78,7 +147,7 @@
               <li><a href="./guide.html">가이드</a></li>
               <li><a href="#">미디어</a></li>
               <li><a href="#">웹툰</a></li>
-              <li><a href="#" class="modal">커뮤니티</a></li>
+              <li><a href="#" class="modal-commu-btn">커뮤니티</a></li>
               <li><a href="./redemption.html">쿠폰</a></li>
               <li><a href="#">A-SQUAD</a></li>
               <li class="site-link"><a href="#">PUBG UNIVERSE</a></li>
@@ -93,40 +162,45 @@
           <a href="#" class="icon hamburger"><span><img src="./img/icon_hamburger.png"></span></a>
         </div>
       </div>
-      <div class="lang-wrap" style="display: none;">
-        <div class="close-btn">
-          <span></span>
-          <span></span>
-        </div>
-        <div class="lang left">
-          <p>언어를</p>
-          <p>선택해주세요</p>
-        </div>
-        <div class="lang right">
-          <div>
-            <a>English</a>
-            <a>English(India)</a>
-            <a>한국어</a>
-            <a>Português(Brasil)‎</a>
-            <a>Español(América Latina)‎</a>
-          </div>
-          <div>
-            <a>ไทย</a>
-            <a>Bahasa Indonesia</a>
-            <a>Bahasa Malaysia</a>
-            <a>中文(简体)‎</a>
-            <a>中文(繁體)‎</a>
-          </div>
-          <div>
-            <a>日本語</a>
-            <a>Deutsch</a>
-            <a>العربية</a>
-          </div>
-          <div>
-            <a>Türkçe</a>
-            <a>Русский</a>
-            <a>Français(Europe)‎</a>
-            <a>Español(Europeo)‎‎</a>
+      <div id="lang-modal">
+        <div class="dark-bg"></div>
+        <div class="lang-wrap">
+          <div class="lang-contents">
+            <div class="lang-close-btn">
+              <span></span>
+              <span></span>
+            </div>
+            <div class="lang left">
+              <p>언어를</p>
+              <p>선택해주세요</p>
+            </div>
+            <div class="lang right">
+              <div>
+                <a>English</a>
+                <a>English(India)</a>
+                <a class="checked-lang">한국어</a>
+                <a>Português(Brasil)‎</a>
+                <a>Español(América Latina)‎</a>
+              </div>
+              <div>
+                <a>ไทย</a>
+                <a>Bahasa Indonesia</a>
+                <a>Bahasa Malaysia</a>
+                <a>中文(简体)‎</a>
+                <a>中文(繁體)‎</a>
+              </div>
+              <div>
+                <a>日本語</a>
+                <a>Deutsch</a>
+                <a>العربية</a>
+              </div>
+              <div>
+                <a>Türkçe</a>
+                <a>Русский</a>
+                <a>Français(Europe)‎</a>
+                <a>Español(Europeo)‎‎</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -137,7 +211,7 @@
         <div class="main-text">
           <p>최신 소식은</p>
           <p>네이버 공식 카페에서!</p>
-          <a href="#"><div><span>자세히 보기</span></div></a>
+          <a href="#" class="more-btn"><div><span>자세히 보기</span></div></a>
         </div>
       </div>
     </section>
@@ -174,7 +248,7 @@
           <div class="commu-box-hover"></div>
           <div class="commu-contents">
             <div class="commu-icon"></div>
-            <p>NAVER CAFE</p>
+            <div class="commu-text">NAVER CAFE</div>
             <a href="https://cafe.naver.com/pubgnewstate"><div>JOIN</div></a>
           </div>
         </div>
@@ -183,7 +257,7 @@
           <div class="commu-box-hover"></div>
           <div class="commu-contents">
             <div class="commu-icon"></div>
-            <p>NAVER GAME</p>
+            <div class="commu-text">NAVER GAME</div>
             <a href="https://game.naver.com/lounge/NEWSTATEMOBILE/home"><div>JOIN</div></a>
           </div>
         </div>
@@ -192,7 +266,7 @@
           <div class="commu-box-hover"></div>
           <div class="commu-contents">
             <div class="commu-icon"></div>
-            <p>FACEBOOK</p>
+            <div class="commu-text">FACEBOOK</div>
             <a href="https://www.facebook.com/OfficialNEWSTATEMOBILE/"><div>LIKE</div></a>
           </div>
         </div>
@@ -201,7 +275,7 @@
           <div class="commu-box-hover"></div>
           <div class="commu-contents">
             <div class="commu-icon"></div>
-            <p>YOUTUBE</p>
+            <div class="commu-text">YOUTUBE</div>
             <a href="https://www.youtube.com/channel/UCDPbaUQKbOBkcKYqEGgz0kQ"><div>SUBSCRIBE</div></a>
           </div>
         </div>
@@ -210,7 +284,7 @@
           <div class="commu-box-hover"></div>
           <div class="commu-contents">
             <div class="commu-icon"></div>
-            <p>INSTAGRAM</p>
+            <div class="commu-text">INSTAGRAM</div>
             <a href="https://www.instagram.com/newstatemobile_kr/"><div>FOLLOW</div></a>
           </div>
         </div>
