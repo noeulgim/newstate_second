@@ -154,10 +154,10 @@ a { text-decoration: none; color: #000; }
   line-height: 30px;
 }
 
-#modal-community #commu-box > p {
+#modal-community .commu-text {
   margin-top: 0;
   font-size: 15px;
-  margin-left: 16px;
+  left: 110px;
   line-height: 3;
 }
 
@@ -444,7 +444,7 @@ header {
 }
 
 #lang-modal {
-  opacity: 0;
+  display: none;
 }
 .lang-wrap {
   position: absolute;
