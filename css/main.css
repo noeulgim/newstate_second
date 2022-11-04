@@ -450,95 +450,6 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 96%);
   margin-left: 0;
 }
 
-/*************************** footer *******************************/
-footer {
-  background: #000;
-  display: flex;
-  justify-content: center;
-  min-height: 300px;
-}
-
-#footer-wrap {
-  width: 1280px;
-  padding: 0 20px;
-}
-
-.footer-contents {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.footer-left {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  height: 100%;
-  margin-top: 52px;
-  float: left;
-}
-
-.footer-left .logo {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-}
-
-.footer-left .logo img {
-  position: absolute;
-  top: calc(130px / 2 - 27px);
-}
-
-.link-area {
-  position: relative;
-  float: right;
-  left: 300px;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  font-size: 12px;
-}
-
-.link-area ul {
-  overflow: hidden;
-  margin-bottom: 34px;
-}
-
-.link-area ul li {
-  float: left;
-  margin-right: 12px;
-}
-
-.link-area ul li a {
-  color: #fff;
-}
-
-.link-area ul li:nth-child(2) a {
-  font-weight: 700;
-}
-
-.link-area a, .copyright {
-  color: #6c6c6c;
-}
-
-.link-area a:hover {
-  text-decoration: underline;
-}
-
-.copyright p {
-  margin-top: 34px;
-  text-transform: uppercase;
-  line-height: 1.56;
-}
-
-.copyright p + p {
-  display: inline;
-  margin-top: 0;
-  flex: 50%;
-}
-
 @media screen and (min-width: 1276px) {
   #commu-box > div:nth-of-type(1):hover .commu-icon {
     background-position: 265px 60px;
@@ -659,45 +570,6 @@ footer {
 
   #bottom .bottom-left span {
     font-size: 38px;
-  }
-
-  #footer-wrap {
-    padding: 0 20px 150px;
-  }
-
-  .footer-contents {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .footer-left {
-    flex-direction: column;
-  }
-
-  .footer-left .logo img {
-    position: relative;
-    margin: 0 0 55px;
-  }
-
-  .link-area {
-    margin-top: 55px;
-    margin-bottom: 51px;
-    left: 0;
-    text-align: center;
-  }
-
-  .link-area ul {
-    margin: 0 auto;
-  }
-
-  .link-area ul li a {
-    font-size: 14px;
-  }
-
-  .link-area a {
-    margin-top: 34px;
-    line-height: 1.56;
   }
 }
 
@@ -847,27 +719,5 @@ footer {
     padding: 20px;
   }
 
-  .footer-left .logo img {
-    width: 169px;
-    height: 39px;
-    margin: 0 0 32px;
-  }
 
-  .link-area ul li {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .link-area ul li a {
-    font-size: 14px;
-  }
-
-  .copyright p:last-child {
-    display: block;
-  }
-
-  .footer-right img {
-    width: 50px;
-    height: 60px;
-  }
 }

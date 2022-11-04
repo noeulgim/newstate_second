@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+html,body { overflow-x: hidden; }
+body { font-family: 'Noto Sans KR', sans-serif; width:100%; min-width: 365px;}
+button { border: none; background: none; }
+a { text-decoration: none; }
+
+#title-banner {
+  width: 100%;
+  height: 280px;
+  background: url('../img/guide_bg.jpg') no-repeat 50%;
+  background-size: cover;
+  margin-bottom: 96px;
+}
+.title-text {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  max-width: 100%;
+  width: 1660px;
+  margin: 0 auto;
+}
+.title-text p {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 120px;
+  color: #10eba4;
+}
+
+section {
+  padding: 0 20px;
+  height: 100%;
+  max-width: 100%;
+  width: 1660px;
+  margin: 0 auto;
+}
+
+.input-wrap {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 48px;
+}
+select, option {
+  width: 200px;
+  height: 56px;
+  padding: 0 40px 0 20px;
+  font-size: 18px;
+}
+select {
+  position: relative;
+  appearance: none;
+  background: url('../img/icon_dropdown_arrow_17.58e638b.png') 160px no-repeat;
+  background-size: 18px;
+  outline: 0;
+  border: 1px solid #aaa;
+}
+select option:hover {
+  background: #eee;
+}
+select img {
+  position: absolute;
+  right: 0;
+}
+.input input {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 20px;
+  width: 200px;
+  height: 56px;
+  line-height: 56px;
+  border-radius: 1px;
+  color: #999;
+  background: #000;
+  font-size: 18px;
+  outline: 0;
+}
+.input-wrap button {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.input-wrap button img {
+  width: 24px;
+  height: 24px;
+}
+
+section.webtoon .input-wrap button {
+  right: 100%;
+  left: 156px;
+}
+
+.contents-wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  transition: .2s ease;
+  flex:50%;
+}
+
+.contents-wrap.more {
+  display: none;
+}
+
+.items-wrap {
+  cursor: pointer;
+}
+
+article {
+  margin-left: 8px;
+  margin-bottom: 72px;
+}
+.contents-wrap .items-wrap:nth-child(3n+1) article {
+  margin-left: 0;
+}
+.items {
+  display: block;
+  max-width: 100%;
+  width: 528px;
+  text-align: left;
+  margin-bottom: 55px;
+}
+.img-wrap {
+  overflow: hidden;
+}
+.img-wrap img {
+  width: 100%;
+}
+
+article p {
+  margin-top: 26px;
+  color:#9c9c9c;
+  font-size: 12px;
+}
+
+article p:nth-of-type(2) {
+  margin-top: 14px;
+}
+
+section.webtoon article p:nth-of-type(1):before{
+  content:'쭝생';
+  color: #efb400;
+  font-weight: 700;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+article h4 {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.more-view-btn {
+  box-sizing: border-box;
+  min-width: 120px;
+  padding: 0 15px;
+  height: 56px;
+  line-height: 56px;
+  border-radius: 1px;
+  outline: 0;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #000;
+  margin-bottom: 160px;
+  font-weight: 700;
+}
+
+@media screen and (max-width:1661px) {
+  section {
+    width: 1280px;
+  }
+  .items {
+    width: 408px;
+  }
+}
+
+@media screen and (max-width:1330px) {
+  article {
+    margin-left: 0;
+  }
+  .content-wrap {
+    justify-content: auto;
+  }
+  .items-wrap {
+    width: calc(50% - 4px);
+  }
+  .items {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:1025px) {
+  .items {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  select, option {
+    width: 150px;
+  }
+  select {
+    background-position: 110px;
+  }
+  .input input {
+    width: 150px;
+  }
+  section.webtoon .input-wrap button {
+    left: 106px;
+  }
+  .items-wrap {
+    width: 100%;
+  }
+}
