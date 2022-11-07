@@ -453,45 +453,45 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 96%);
 }
 
 @media screen and (min-width: 1276px) {
-  #commu-box > div:nth-of-type(1):hover .commu-icon {
+  #community #commu-box > div:nth-of-type(1):hover .commu-icon {
     background-position: 265px 60px;
   }
-  #commu-box > div:nth-of-type(2):hover .commu-icon {
+  #community #commu-box > div:nth-of-type(2):hover .commu-icon {
     background-position: 65px 60px;
   }
-  #commu-box > div:nth-of-type(3):hover .commu-icon {
+  #community #commu-box > div:nth-of-type(3):hover .commu-icon {
     background-position: 3px 63px;
   }
 
-  #commu-box > div:hover .commu-text {
+  #community #commu-box > div:hover .commu-text {
     color: #04d15f;
   }
-  #commu-box > div:nth-of-type(3):hover .commu-text {
+  #community #commu-box > div:nth-of-type(3):hover .commu-text {
     color: #1877f2;
   }
-  #commu-box > div:nth-of-type(4):hover .commu-icon {
+  #community #commu-box > div:nth-of-type(4):hover .commu-icon {
     background-position: 480px 60px;
   }
-  #commu-box > div:nth-of-type(4):hover .commu-text {
+  #community #commu-box > div:nth-of-type(4):hover .commu-text {
     color: #ff0000;
   }
-  #commu-box > div:nth-of-type(5):hover .commu-icon {
+  #community #commu-box > div:nth-of-type(5):hover .commu-icon {
     background-position: 410px 60px;
   }
 
-  #commu-box > div:nth-of-type(5):hover .commu-text {
+  #community #commu-box > div:nth-of-type(5):hover .commu-text {
     color: #b81c59;
   }
-  #commu-box > div:hover a div {
+  #community #commu-box > div:hover a div {
     background: linear-gradient(173deg,#05d86d,#03ca51);
   }
-  #commu-box > div:nth-child(3):hover a div {
+  #community #commu-box > div:nth-child(3):hover a div {
     background: linear-gradient(173deg,#1c89f4,#1465f0);
   }
-  #commu-box > div:nth-child(4):hover a div {
+  #community #commu-box > div:nth-child(4):hover a div {
     background: red;
   }
-  #commu-box > div:nth-child(5):hover a div {
+  #community #commu-box > div:nth-child(5):hover a div {
     background: linear-gradient(173deg,#836bd9,#a8026f,#e14633,#fcbf48);
   }
 }

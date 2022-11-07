@@ -21,6 +21,7 @@ a { text-decoration: none; color: #000; }
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  padding: 20px;
   max-width: 540px;
   height: 100%;
   top: 0;
@@ -803,6 +804,7 @@ footer {
   #modal-community .commu-text {
     font-size: 12px;
     line-height: 42px;
+    left: 70px;
   }
   #modal-community #commu-box div a div {
     width: 100px;

@@ -89,10 +89,10 @@ $(function(){
   });
 
   var hoverDataBg = $(this).data('bg');
-  var findNonAct = $('#community .commu-box-hover').find('.nonactive');
-  var findAct = $('#community .commu-box-hover').find('.active');
-  $('#community .commu-box-wrap').each(function(){
-    var findhov = $(this).find('#community .commu-box-hover');
+  var findNonAct = $('.commu-box-hover').find('.nonactive');
+  var findAct = $('.commu-box-hover').find('.active');
+  $('.commu-box-wrap').each(function(){
+    var findhov = $(this).find('.commu-box-hover');
     $(this).mouseenter(function(){
       findhov.removeClass('nonactive');
       findhov.addClass('active');
