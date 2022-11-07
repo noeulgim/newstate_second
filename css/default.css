@@ -111,6 +111,23 @@ a { text-decoration: none; color: #000; }
   z-index: 3000;
 }
 
+#modal-community #commu-box > div {
+  background: linear-gradient(173deg,#05d86d,#03ca51);
+  color: #fff;
+}
+
+#modal-community #commu-box > div:nth-child(3) {
+  background: linear-gradient(173deg,#1c89f4,#1465f0);
+}
+
+#modal-community #commu-box > div:nth-child(4) {
+  background: red;
+}
+
+#modal-community #commu-box > div:nth-child(5) {
+  background: linear-gradient(173deg,#836bd9,#a8026f,#e14633,#fcbf48);
+}
+
 #modal-community .commu-contents .commu-icon, .commu-contents p {
   float: left;
 }
@@ -143,6 +160,7 @@ a { text-decoration: none; color: #000; }
 
 #modal-community #commu-box div a {
   margin-top: 4px;
+  color: #fff;
 }
 
 #modal-community #commu-box div a div {
@@ -207,7 +225,7 @@ a { text-decoration: none; color: #000; }
   top: 27px;
 }
 
-.main-text a:after {
+.modal-bottom .more-btn:after {
   display: none;
 }
 
@@ -770,6 +788,34 @@ footer {
   }
 }
 @media screen and (max-width: 467px) {
+  .modal-wrap > .contents {
+    padding: 30px;
+  }
+  .modal-wrap > .contents > p {
+    font-size: 14px;
+  }
+  #modal-community .modal-bottom {
+    padding: 30px;
+  }
+  #modal-community .commu-contents {
+    padding: 10px;
+  }
+  #modal-community .commu-text {
+    font-size: 12px;
+    line-height: 42px;
+  }
+  #modal-community #commu-box div a div {
+    width: 100px;
+  }
+  .modal-bottom .modal-btn {
+    height: 53px;
+  }
+  .modal-bottom a {
+    font-size: 16px;
+  }
+  .modal-btn a div:after {
+    top: 12px;
+  }
   .footer-left .logo img {
     width: 169px;
     height: 39px;
